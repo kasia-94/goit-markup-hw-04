@@ -143,11 +143,16 @@ header {
   color: var(--secondary-text-color);
   font-style: normal;
 }
+.auth-nav-icon {
+  fill: red;
+}
 
 /*Main section*/
 .main-index {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -158,7 +163,18 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--main-section-color);
+
+  min-height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-index-title {
   margin-top: 0;
